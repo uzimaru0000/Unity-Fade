@@ -7,7 +7,7 @@ UnityでFadeIn/Outを使うAssets
 
 1. `Fade.cs`をMainCameraにアタッチ  
 1. 各スクリプトで以下のように使う
-```cs
+```c#
 var fader = Camera.main.GetComponent<Fade>();
 fader.FadeIn(0.5f, () => print("Finish FadeIn!"))
      .FadeOut(0.5f, () => print("Finish FadeOut!"));
