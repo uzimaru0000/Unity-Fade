@@ -5,8 +5,8 @@ UnityでFadeIn/Outを使うAssets
 
 ## How to Use
 
-1. `Fade.cs`をMainCameraにアタッチ  
-1. 各スクリプトで以下のように使う
+1. `Fade.cs`をMainCameraにアタッチ  
+1. 各スクリプトで以下のように使う
 ```cs
 var fader = Camera.main.GetComponent<Fade>();
 fader.FadeIn(0.5f, () => print("Finish FadeIn!"))
@@ -17,6 +17,6 @@ fader.FadeIn(0.5f, () => print("Finish FadeIn!"))
 
 ### FadeClass
 - `Fade FadeIn(float time, System.Action callback = null)`  
-    time秒でフェードインした後callbackを実行
+     time秒でフェードインした後callbackを実行
 - `Fade FadeOut(float time, System.Action callback = null)`  
-    time秒でフェードアウトした後callbackを実行
+     time秒でフェードアウトした後callbackを実行
